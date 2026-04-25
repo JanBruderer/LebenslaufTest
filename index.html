@@ -123,6 +123,7 @@
         Praktische Erfahrung
         <span class="arrow">▶</span>
       </summary>
+
       <div class="accordion-content">
         <ul class="experience-list">
 
@@ -133,6 +134,7 @@
 
             <details class="inner-details">
               <summary class="more-summary">Mehr erfahren</summary>
+
               <div class="more-content">
                 <div class="more-box">
                   <p>
@@ -161,7 +163,10 @@
                   </p>
 
                   <object data="sprachaufenthalt.pdf" type="application/pdf" class="certificate-frame">
-                    <p>Die PDF konnte nicht direkt angezeigt werden. <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">Hier öffnen</a>.</p>
+                    <p>
+                      Die PDF konnte nicht direkt angezeigt werden.
+                      <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">Hier öffnen</a>.
+                    </p>
                   </object>
                 </div>
               </div>
@@ -175,6 +180,7 @@
 
             <details class="inner-details">
               <summary class="more-summary">Mehr erfahren</summary>
+
               <div class="more-content">
                 <div class="more-box">
                   <p>
@@ -195,7 +201,10 @@
                   </p>
 
                   <object data="ict-campus.pdf" type="application/pdf" class="certificate-frame">
-                    <p>Die PDF konnte nicht direkt angezeigt werden. <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">Hier öffnen</a>.</p>
+                    <p>
+                      Die PDF konnte nicht direkt angezeigt werden.
+                      <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">Hier öffnen</a>.
+                    </p>
                   </object>
                 </div>
               </div>
@@ -209,6 +218,74 @@
           </li>
 
         </ul>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        Schnupperlehren / Schnuppertage
+        <span class="arrow">▶</span>
+      </summary>
+
+      <div class="accordion-content">
+
+        <h4>Gebäudeinformatiker EFZ</h4>
+        <ul class="experience-list">
+          <li><a href="https://lehmann.ch/" target="_blank" rel="noopener noreferrer">Lehmann Elektro AG</a></li>
+          <li><a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> (2 Tage)</li>
+          <li><a href="https://www.bichler.ch/" target="_blank" rel="noopener noreferrer">Bichler + Partner AG</a></li>
+          <li><a href="https://www.ibg.ch/engineering" target="_blank" rel="noopener noreferrer">IBG Engineering AG</a> (Halber Tag)</li>
+          <li><a href="https://www.flughafen-zuerich.ch/de/unternehmen" target="_blank" rel="noopener noreferrer">Flughafen Zürich AG</a></li>
+          <li><a href="https://www.techcom.ch/" target="_blank" rel="noopener noreferrer">TechCom electro AG</a> (2 Tage)</li>
+        </ul>
+
+        <h4>Elektroinstallateur EFZ</h4>
+        <ul class="experience-list">
+          <li><a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> (2 Tage)</li>
+          <li><a href="https://www.etavis.ch/" target="_blank" rel="noopener noreferrer">ETAVIS</a></li>
+        </ul>
+
+        <h4>Multimediaelektroniker EFZ</h4>
+        <ul class="experience-list">
+          <li>
+            <a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">
+              St. Gallisch-Appenzellische Kraftwerke AG (SAK)
+            </a>
+          </li>
+        </ul>
+
+        <h4>Elektroniker EFZ</h4>
+        <ul class="experience-list">
+          <li>
+            <a href="https://www.gesys.ch/" target="_blank" rel="noopener noreferrer">
+              Grossenbacher Systeme AG
+            </a> (Halber Tag)
+          </li>
+        </ul>
+
+        <h4>Automatiker EFZ</h4>
+        <ul class="experience-list">
+          <li>
+            <a href="https://schmidautomation.com/" target="_blank" rel="noopener noreferrer">
+              Schmid Automation AG
+            </a>
+          </li>
+        </ul>
+
+        <h4>ICT-Fachmann EFZ</h4>
+        <ul class="experience-list">
+          <li>
+            <a href="https://www.h-och.ch/" target="_blank" rel="noopener noreferrer">
+              HOCH Health Ostschweiz
+            </a>
+          </li>
+          <li>
+            <a href="https://www.raiffeisen.ch/rch/de.html" target="_blank" rel="noopener noreferrer">
+              Raiffeisen Schweiz
+            </a> (Infoanlass)
+          </li>
+        </ul>
+
       </div>
     </details>
 
@@ -231,11 +308,13 @@
         Referenzen
         <span class="arrow">▶</span>
       </summary>
+
       <div class="accordion-content">
         <ul class="reference-list">
           <li class="reference-item">
             <strong>Klassenlehrperson</strong><br>
             Flade, Klosterschulhaus<br><br>
+
             <strong>Herr Michael Neidhart</strong><br>
             <a href="mailto:michael.neidhart@flade.ch">michael.neidhart@flade.ch</a><br>
             <a href="tel:0791984895">Tel. 079 198 48 95</a>
@@ -244,6 +323,7 @@
           <li class="reference-item">
             <strong>Fachlehrperson</strong><br>
             Flade, Klosterschulhaus<br><br>
+
             <strong>Herr Michael Cozzio</strong><br>
             <a href="mailto:michael.cozzio@flade.ch">michael.cozzio@flade.ch</a><br>
             <a href="tel:0774317038">Tel. 077 431 70 38</a>
@@ -265,7 +345,7 @@
       const content = accordion.querySelector(".accordion-content");
 
       accordion.addEventListener("toggle", () => {
-        if (accordion.open) {
+        if (accordion.open && content) {
           restartAnimation(content, "animate-section");
         }
       });
@@ -275,7 +355,7 @@
       const content = detail.querySelector(".more-content");
 
       detail.addEventListener("toggle", () => {
-        if (detail.open) {
+        if (detail.open && content) {
           restartAnimation(content, "animate-more");
         }
       });
