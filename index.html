@@ -2,370 +2,363 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jan Bruderer – Lebenslauf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan Bruderer – Online-Lebenslauf</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <main class="cv">
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Jan Bruderer</div>
 
-    <header class="header">
-      <h1>Jan Bruderer</h1>
-      <p class="subtitle">Schüler · Sekundarstufe · Interesse an Informatik</p>
-    </header>
+    <div class="nav-links">
+      <button onclick="showPage('start')">Start</button>
+      <button onclick="showPage('ueber')">Über mich</button>
+      <button onclick="showPage('faehigkeiten')">Fähigkeiten</button>
+      <button onclick="showPage('erfahrung')">Erfahrung</button>
+      <button onclick="showPage('schnupper')">Schnupperlehren</button>
+      <button onclick="showPage('ausbildung')">Ausbildung</button>
+      <button onclick="showPage('kontakt')">Kontakt</button>
+    </div>
+  </div>
+</nav>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Kontakt
-        <span class="arrow">▶</span>
-      </summary>
-      <div class="accordion-content">
-        <ul>
-          <li><strong>E-Mail:</strong> <a href="mailto:Jan.bruderer11@gmail.com">Jan.bruderer11@gmail.com</a></li>
-          <li><strong>Telefon:</strong> <a href="tel:0774765792">077 476 57 92</a></li>
-          <li><strong>Adresse:</strong> Paul-Brandt-Strasse 19, 9000 St. Gallen</li>
-          <li><strong>Geburtsdatum:</strong> 12. September 2011</li>
-        </ul>
-      </div>
-    </details>
+<main class="page">
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Über mich
-        <span class="arrow">▶</span>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          Ich bin ein motivierter und engagierter Schüler mit grossem Interesse an Informatik.
-          Durch Aikido, Handball und schulische Erfahrungen habe ich gelernt, Verantwortung zu übernehmen,
-          diszipliniert zu arbeiten und im Team zuverlässig mitzuwirken. Ich freue mich darauf,
-          meine Fähigkeiten weiterzuentwickeln und neue praktische Erfahrungen zu sammeln.
+  <section id="start" class="site-page active">
+    <div class="start-layout">
+      <div class="start-text">
+        <p class="eyebrow">Online-Lebenslauf</p>
+        <h1>Jan Bruderer</h1>
+        <p class="subtitle">Schüler · Sekundarstufe · Interesse an Informatik, ICT und Technik</p>
+
+        <p class="hero-text">
+          Motivierter Schüler mit grossem Interesse an Informatik, technischen Systemen und praktischer Arbeit.
+          Diese Webseite habe ich als interaktiven Online-Lebenslauf eigenständig im ICT-Campus entwickelt.
         </p>
-      </div>
-    </details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Fähigkeiten
-        <span class="arrow">▶</span>
-      </summary>
-      <div class="accordion-content">
-        <div class="skills">
-          <div class="skill-tooltip">
-            <span class="skill-tag">Informatik</span>
-            <div class="tooltip-box">ICT-Campus<br>ECDL Zertifikat</div>
-          </div>
-
-          <div class="skill-tooltip">
-            <span class="skill-tag">Teamfähigkeit</span>
-            <div class="tooltip-box">Durch Handball gelernt</div>
-          </div>
-
-          <div class="skill-tooltip">
-            <span class="skill-tag">Disziplin</span>
-            <div class="tooltip-box">Aikido und Handball</div>
-          </div>
-
-          <div class="skill-tooltip">
-            <span class="skill-tag">Ausdauer</span>
-            <div class="tooltip-box">ICT-Campus, Aikido, Handball und Schule</div>
-          </div>
-
-          <div class="skill-tooltip">
-            <span class="skill-tag">Belastbarkeit</span>
-            <div class="tooltip-box">Schule, Sport und neue Herausforderungen</div>
-          </div>
-
-          <div class="skill-tooltip">
-            <span class="skill-tag">Konzentration</span>
-            <div class="tooltip-box">Besonders durch Aikido und schulische Arbeit</div>
-          </div>
-
-          <div class="skill-tooltip">
-            <span class="skill-tag">Verantwortung</span>
-            <div class="tooltip-box">Sprachaufenthalt England<br>Trainer beim Aikido Kindertraining</div>
-          </div>
+        <div class="hero-buttons">
+          <button onclick="showPage('kontakt')" class="primary-btn">Kontakt aufnehmen</button>
+          <button onclick="showPage('schnupper')" class="secondary-btn">Schnupperlehren ansehen</button>
         </div>
       </div>
-    </details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Sprachen
-        <span class="arrow">▶</span>
-      </summary>
-      <div class="accordion-content">
-        <ul>
-          <li><strong>Deutsch:</strong> Muttersprache</li>
-          <li><strong>Tschechisch:</strong> Muttersprache</li>
-          <li><strong>Englisch:</strong> Fortgeschritten</li>
-          <li><strong>Französisch:</strong> Grundkenntnisse</li>
-        </ul>
+      <div class="photo-card">
+        <img src="profilbild.jpg" alt="Foto von Jan Bruderer">
+        <p>Jan Bruderer</p>
       </div>
-    </details>
+    </div>
+  </section>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Ausbildung
-        <span class="arrow">▶</span>
-      </summary>
-      <div class="accordion-content">
-        <ul>
-          <li><strong>2024 – heute:</strong> Sekundarstufe, Flade — Klosterschulhaus St. Gallen</li>
-          <li><strong>2018 – 2024:</strong> Primarschule Feldli — St. Gallen</li>
-        </ul>
+  <section id="ueber" class="site-page">
+    <div class="section">
+      <h2>Über mich</h2>
+      <p>
+        Ich bin ein motivierter und engagierter Schüler mit grossem Interesse an Informatik.
+        Durch Aikido, Handball und schulische Erfahrungen habe ich gelernt, Verantwortung zu übernehmen,
+        diszipliniert zu arbeiten und im Team zuverlässig mitzuwirken. Ich freue mich darauf,
+        meine Fähigkeiten weiterzuentwickeln und neue praktische Erfahrungen zu sammeln.
+      </p>
+    </div>
+  </section>
+
+  <section id="faehigkeiten" class="site-page">
+    <div class="section">
+      <h2>Fähigkeiten</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card"><strong>Informatik</strong><span>ICT-Campus, ECDL Zertifikat</span></div>
+        <div class="skill-card"><strong>Teamfähigkeit</strong><span>Handball</span></div>
+        <div class="skill-card"><strong>Disziplin</strong><span>Aikido und Handball</span></div>
+        <div class="skill-card"><strong>Ausdauer</strong><span>ICT-Campus, Aikido, Handball und Schule</span></div>
+        <div class="skill-card"><strong>Belastbarkeit</strong><span>Schule, Sport und neue Herausforderungen</span></div>
+        <div class="skill-card"><strong>Konzentration</strong><span>Aikido und schulische Arbeit</span></div>
+        <div class="skill-card"><strong>Verantwortung</strong><span>Sprachaufenthalt England, Aikido Kindertraining</span></div>
       </div>
-    </details>
+    </div>
+  </section>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Praktische Erfahrung
-        <span class="arrow">▶</span>
-      </summary>
+  <section id="erfahrung" class="site-page">
+    <div class="section">
+      <h2>Praktische Erfahrung</h2>
 
-      <div class="accordion-content">
-        <ul class="experience-list">
+      <article class="experience-card">
+        <div class="experience-top">
+          <h3>Sprachaufenthalt England – Torquay</h3>
+          <span>Sommer 2025</span>
+        </div>
 
-          <li class="experience-item">
-            <div class="experience-head">
-              <strong>2025:</strong> Sprachaufenthalt England (Torquay)
+        <p>
+          Im Sommer 2025 absolvierte ich einen dreiwöchigen Sprachaufenthalt in Torquay, England.
+          Während dieser Zeit konnte ich meine Englischkenntnisse deutlich verbessern und wertvolle internationale
+          Erfahrungen sammeln. Besonders bereichernd war der Austausch mit Menschen aus verschiedenen Ländern und Kulturen.
+          Da ich alleine unterwegs war, entwickelte ich zudem ein höheres Mass an Selbstständigkeit und Eigenverantwortung.
+        </p>
+
+        <div class="button-row">
+          <a href="https://www.esl.ch/de/lp/sprachaufenthalte?idesl=00eeb030a9d4a2b8f1e3522e31ab2298&msclkid=7831540d3b3c1270c00b3da6d71dca9e&utm_source=bing&utm_medium=cpc&utm_campaign=CHDE%20-%20BRA&utm_term=ESL&utm_content=ALL%20-%20Brand" target="_blank">ESL Sprachreisen</a>
+          <a href="https://www.kaplaninternational.com/language-schools/united-kingdom/torquay" target="_blank">Kaplan Torquay</a>
+          <a href="sprachaufenthalt.pdf" target="_blank">Zertifikat öffnen</a>
+        </div>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <h3>ICT-Campus – Informatik-Förderprogramm</h3>
+          <span>ab Mai 2025</span>
+        </div>
+
+        <p>
+          Am ICT Campus lerne ich verschiedene Programmierkonzepte kennen. Ich beschäftige mich selbstständig damit,
+          wie Programme und Algorithmen funktionieren, und verstehe dadurch technische Zusammenhänge immer besser.
+          Der ICT Campus ist ein spannender Lernort, an dem ich jeden zweiten Samstag vier Stunden lang an verschiedenen Projekten arbeite.
+        </p>
+
+        <div class="button-row">
+          <a href="https://www.ict-scouts.ch/de/campus/index.php" target="_blank">ICT Scouts Campus</a>
+          <a href="ict-campus.pdf" target="_blank">Zertifikat öffnen</a>
+        </div>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <h3>Aikido – Trainer beim Kindertraining</h3>
+          <span>2022 – heute</span>
+        </div>
+
+        <p>
+          Beim Kindertraining übernehme ich Verantwortung, unterstütze jüngere Teilnehmende
+          und lerne, geduldig, zuverlässig und klar zu kommunizieren.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="schnupper" class="site-page">
+    <div class="section">
+      <h2>Schnupperlehren / Schnuppertage</h2>
+
+      <div class="job-grid">
+
+        <div class="job-card">
+          <h3>Gebäudeinformatiker EFZ</h3>
+          <ul>
+            <li><a href="https://lehmann.ch/" target="_blank">Lehmann Elektro AG</a> – 26. September 2025</li>
+
+            <li>
+              <a href="https://www.baumann-electro.ch/de/" target="_blank">Baumann Electro AG</a> – 9.–10. Oktober 2025
+             <div class="pdf-link-box">
+              <a href="bericht-baumann-gebaeudeinformatiker.pdf" target="_blank">
+                Hier klicken um den Schnupperbericht anzusehen
+              </a>
             </div>
+            </li>
 
-            <details class="inner-details">
-              <summary class="more-summary">Mehr erfahren</summary>
+            <li>
+              <a href="https://www.bichler.ch/" target="_blank">Bichler + Partner AG</a> – 5. Februar 2026
+              <div class="pdf-link-box">
+              <a href="bericht-bichler-partner.pdf" target="_blank">
+                Hier klicken um den Schnupperbericht anzusehen
+              </a>
+            </div>
+            </li>
 
-              <div class="more-content">
-                <div class="more-box">
-                  <p>
-                   Im Sommer 2025 absolvierte ich einen dreiwöchigen Sprachaufenthalt in Torquay, England. Während dieser Zeit konnte ich meine Englischkenntnisse deutlich verbessern und wertvolle internationale Erfahrungen sammeln. Besonders bereichernd war der Austausch mit Menschen aus verschiedenen Ländern und Kulturen, wodurch ich viele neue Freundschaften knüpfen konnte. Da ich alleine unterwegs war, entwickelte ich zudem ein höheres Mass an Selbstständigkeit und Eigenverantwortung. Durch den täglichen Kontakt mit anderen Teilnehmenden konnte ich ausserdem meine sozialen und kommunikativen Fähigkeiten stärken. Insgesamt war der Sprachaufenthalt sowohl sprachlich als auch persönlich eine sehr wertvolle Erfahrung für mich.
-                  </p>
+            <li><a href="https://www.ibg.ch/engineering" target="_blank">IBG Engineering AG</a> – 22. November 2025</li>
 
-                  <p>
-                    Organisation:
-                    <a href="https://www.esl.ch/de/lp/sprachaufenthalte?idesl=00eeb030a9d4a2b8f1e3522e31ab2298&msclkid=7831540d3b3c1270c00b3da6d71dca9e&utm_source=bing&utm_medium=cpc&utm_campaign=CHDE%20-%20BRA&utm_term=ESL&utm_content=ALL%20-%20Brand" target="_blank" rel="noopener noreferrer">
-                      ESL Sprachreisen
-                    </a>
-                  </p>
-
-                  <p>
-                    Sprachschule:
-                    <a href="https://www.kaplaninternational.com/language-schools/united-kingdom/torquay" target="_blank" rel="noopener noreferrer">
-                      Kaplan International Languages (Torquay)
-                    </a>
-                  </p>
-
-                  <p>
-                    <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">
-                      Zertifikat öffnen
-                    </a>
-                  </p>
-
-                  <object data="sprachaufenthalt.pdf" type="application/pdf" class="certificate-frame">
-                    <p>
-                      Die PDF konnte nicht direkt angezeigt werden.
-                      <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">Hier öffnen</a>.
-                    </p>
-                  </object>
-                </div>
+            <li>
+              <a href="https://www.flughafen-zuerich.ch/de/unternehmen" target="_blank">Flughafen Zürich AG</a> – 21. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-flughafen-zuerich.pdf" target="_blank">
+                  Hier klicken um den Schnupperbericht anzusehen
+                </a>
               </div>
-            </details>
-          </li>
+            </li>
 
-          <li class="experience-item">
-            <div class="experience-head">
-              <strong>ab 2025:</strong> ICT-Campus – Informatik-Förderprogramm
-            </div>
-
-            <details class="inner-details">
-              <summary class="more-summary">Mehr erfahren</summary>
-
-              <div class="more-content">
-                <div class="more-box">
-                  <p>
-                    Am ICT Campus lerne ich verschiedene Programmierkonzepte kennen. Ich beschäftige mich selbstständig damit, wie Programme und Algorithmen funktionieren, und verstehe dadurch technische Zusammenhänge immer besser. Besonders interessant finde ich, dass man vieles selber ausprobieren und experimentieren kann. So sammle ich viele eigene Erfahrungen und lerne ständig etwas Neues dazu. Der ICT Campus ist ein spannender und spielerischer Lernort, an dem ich jeden zweiten Samstag vier Stunden lang an verschiedenen Projekten arbeite.
-                  </p>
-
-                  <p>
-                    <a href="https://www.ict-scouts.ch/de/campus/index.php" target="_blank" rel="noopener noreferrer">
-                      ICT Scouts Campus Website
-                    </a>
-                  </p>
-
-                  <p>
-                    <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">
-                      Zertifikat öffnen
-                    </a>
-                  </p>
-
-                  <object data="ict-campus.pdf" type="application/pdf" class="certificate-frame">
-                    <p>
-                      Die PDF konnte nicht direkt angezeigt werden.
-                      <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">Hier öffnen</a>.
-                    </p>
-                  </object>
-                </div>
+            <li>
+              <a href="https://www.techcom.ch/" target="_blank">TechCom electro AG</a> – 23.–24. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-techcom.pdf" target="_blank">
+                  Hier klicken um den Schnupperbericht anzusehen
+                </a>
               </div>
-            </details>
-          </li>
+              </details>
+            </li>
+          </ul>
+        </div>
 
-          <li class="experience-item">
-            <div class="experience-head">
-              <strong>2022 – heute:</strong> Aikido – Trainer beim Kindertraining
-            </div>
-          </li>
+        <div class="job-card">
+          <h3>Elektroinstallateur EFZ</h3>
+          <ul>
+            <li><a href="https://www.baumann-electro.ch/de/" target="_blank">Baumann Electro AG</a> – 7.–8. Oktober 2025</li>
 
-        </ul>
+            <li>
+              <a href="https://www.etavis.ch/" target="_blank">ETAVIS</a> – 20. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-etavis.pdf" target="_blank">
+                  Hier klicken um den Schnupperbericht anzusehen
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Multimediaelektroniker EFZ</h3>
+          <ul>
+            <li><a href="https://www.sak.ch/" target="_blank">St. Gallisch-Appenzellische Kraftwerke AG (SAK)</a> – 7. Januar 2026</li>
+          </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Multimediaelektroniker EFZ</h3>
+          <ul>
+            <li><a href="https://www.sak.ch/" target="_blank">St. Gallisch-Appenzellische Kraftwerke AG (SAK)</a> – 7. Januar 2026</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Elektroniker EFZ</h3>
+          <ul>
+            <li><a href="https://www.gesys.ch/" target="_blank">Grossenbacher Systeme AG</a> – 16. November 2025, ½ Tag</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Automatiker EFZ</h3>
+          <ul>
+            <li>
+              <a href="https://schmidautomation.com/" target="_blank">Schmid Automation AG</a> – 12. Februar 2026
+              <div class="pdf-link-box">
+                <a href="bericht-schmid-automation.pdf" target="_blank">
+                  Hier klicken um den Schnupperbericht anzusehen
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="job-card">
+          <h3>ICT-Fachmann EFZ</h3>
+          <ul>
+            <li>
+              <a href="https://www.h-och.ch/" target="_blank">HOCH Health Ostschweiz</a> – 1. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-hoch-health.pdf" target="_blank">
+                  Hier klicken um den Schnupperbericht anzusehen
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <a href="https://www.raiffeisen.ch/rch/de.html" target="_blank">Raiffeisen Schweiz</a> – 27. April 2026, Infoanlass
+              <div class="pdf-link-box">
+                <a href="bericht-raiffeisen-bestaetigung.pdf" target="_blank">
+                  Hier klicken um die Bestätigung anzusehen
+                </a>
+              </div>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-card wide-card">
+          <h3>Weiteres</h3>
+          <ul>
+            <li>
+              Infoabend Abacus – Informatiker EFZ Fachrichtung Plattformentwickler und Applikationsentwickler EFZ
+              sowie ICT-Fachmann EFZ – 12. März 2026
+            </li>
+          </ul>
+        </div>
+
       </div>
-    </details>
+    </div>
+  </section>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Schnupperlehren / Schnuppertage
-        <span class="arrow">▶</span>
-      </summary>
+  <section id="ausbildung" class="site-page">
+    <div class="section">
+      <h2>Ausbildung & Sprachen</h2>
 
-      <div class="accordion-content">
+      <div class="grid-2">
+        <div class="timeline-card">
+          <h3>Ausbildung</h3>
+          <div class="timeline-item"><strong>2024 – heute</strong><p>Sekundarstufe, Flade — Klosterschulhaus St. Gallen</p></div>
+          <div class="timeline-item"><strong>2018 – 2024</strong><p>Primarschule Feldli — St. Gallen</p></div>
+        </div>
 
-        <h4>Gebäudeinformatiker EFZ</h4>
-        <ul class="experience-list">
-          <li><a href="https://lehmann.ch/" target="_blank" rel="noopener noreferrer">Lehmann Elektro AG</a>(26. September 2025)</li>  
-          <li><a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> (9.- 10. Oktober 2025)</li>
-          <li><a href="https://www.bichler.ch/" target="_blank" rel="noopener noreferrer">Bichler + Partner AG</a>(5. Februar 2026)</li>
-          <li><a href="https://www.ibg.ch/engineering" target="_blank" rel="noopener noreferrer">IBG Engineering AG</a> (22. November 2025)</ul>li>
-          <li><a href="https://www.flughafen-zuerich.ch/de/unternehmen" target="_blank" rel="noopener noreferrer">Flughafen Zürich AG</a>(21. April 2026)</li>
-          <li><a href="https://www.techcom.ch/" target="_blank" rel="noopener noreferrer">TechCom electro AG</a> (23.- 24. April 2026)</li>
-        </ul>
-
-        <h4>Elektroinstallateur EFZ</h4>
-        <ul class="experience-list">
-          <li><a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> (7.- 8. Oktober 2025)</li>
-          <li><a href="https://www.etavis.ch/" target="_blank" rel="noopener noreferrer">ETAVIS</a> (20 April 2026)</li>
-        </ul>
-
-        <h4>Multimediaelektroniker EFZ</h4>
-        <ul class="experience-list">
-          <li>
-            <a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">
-              St. Gallisch-Appenzellische Kraftwerke AG (SAK)
-            </a>(7. Januar 2026)
-          </li>
-        </ul>
-
-        <h4>Elektroniker EFZ</h4>
-        <ul class="experience-list">
-          <li>
-            <a href="https://www.gesys.ch/" target="_blank" rel="noopener noreferrer">
-              Grossenbacher Systeme AG
-            </a> (16. November 2025) (½ Tag)
-          </li>
-        </ul>
-
-        <h4>Automatiker EFZ</h4>
-        <ul class="experience-list">
-          <li>
-            <a href="https://schmidautomation.com/" target="_blank" rel="noopener noreferrer">
-              Schmid Automation AG
-            </a>(12. Ferbruar 2026)
-          </li>
-        </ul>
-
-        <h4>ICT-Fachmann EFZ</h4>
-        <ul class="experience-list">
-          <li>
-            <a href="https://www.h-och.ch/" target="_blank" rel="noopener noreferrer">
-              HOCH Health Ostschweiz
-            </a>(1. April 2026)
-          </li>
-          <li>
-            <a href="https://www.raiffeisen.ch/rch/de.html" target="_blank" rel="noopener noreferrer">
-              Raiffeisen Schweiz
-            </a>(27. April 2026) (Infoanlass)
-          </li>
-        </ul>
-       
-        <h4>Weiteres</h4>
-        <ul class="experience-list">
-          <li>
-            </a>Infoabend Abacus (Informatiker EFZ Fachrichting Plattformentwiker und Applikationsentwickler EFZ sowie ICT-Fachmann EFZ) (12. März 2026)
-          </li>
-        </ul>
-
+        <div class="timeline-card">
+          <h3>Sprachen</h3>
+          <div class="timeline-item"><strong>Deutsch</strong><p>Muttersprache</p></div>
+          <div class="timeline-item"><strong>Tschechisch</strong><p>Muttersprache</p></div>
+          <div class="timeline-item"><strong>Englisch</strong><p>Fortgeschritten</p></div>
+          <div class="timeline-item"><strong>Französisch</strong><p>Grundkenntnisse</p></div>
+        </div>
       </div>
-    </details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Interessen
-        <span class="arrow">▶</span>
-      </summary>
-      <div class="accordion-content">
-        <ul>
-          <li>Aikido</li>
-          <li>Handball (Torwart)</li>
-          <li>Informatik / ICT-Campus</li>
-        </ul>
+      <h2 class="small-heading">Interessen</h2>
+      <div class="tags">
+        <span>Aikido</span>
+        <span>Handball (Torwart)</span>
+        <span>Informatik</span>
+        <span>ICT-Campus</span>
       </div>
-    </details>
+    </div>
+  </section>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        Referenzen
-        <span class="arrow">▶</span>
-      </summary>
+  <section id="kontakt" class="site-page">
+    <div class="section">
+      <h2>Kontakt</h2>
 
-      <div class="accordion-content">
-        <ul class="reference-list">
-          <li class="reference-item">
-            <strong>Klassenlehrperson</strong><br>
-            Flade, Klosterschulhaus<br><br>
-
-            <strong>Herr Michael Neidhart</strong><br>
-            <a href="mailto:michael.neidhart@flade.ch">michael.neidhart@flade.ch</a><br>
-            <a href="tel:0791984895">Tel. 079 198 48 95</a>
-          </li>
-
-          <li class="reference-item">
-            <strong>Fachlehrperson</strong><br>
-            Flade, Klosterschulhaus<br><br>
-
-            <strong>Herr Michael Cozzio</strong><br>
-            <a href="mailto:michael.cozzio@flade.ch">michael.cozzio@flade.ch</a><br>
-            <a href="tel:0774317038">Tel. 077 431 70 38</a>
-          </li>
-        </ul>
+      <div class="grid-2">
+        <div class="info-card"><strong>E-Mail</strong><a href="mailto:Jan.bruderer11@gmail.com">Jan.bruderer11@gmail.com</a></div>
+        <div class="info-card"><strong>Telefon</strong><a href="tel:0774765792">077 476 57 92</a></div>
+        <div class="info-card"><strong>Adresse</strong>Paul-Brandt-Strasse 19<br>9000 St. Gallen</div>
+        <div class="info-card"><strong>Geburtsdatum</strong>12. September 2011</div>
       </div>
-    </details>
 
-  </main>
+      <h2 class="small-heading">Referenzen</h2>
 
-  <script>
-    function restartAnimation(element, className) {
-      element.classList.remove(className);
-      void element.offsetWidth;
-      element.classList.add(className);
-    }
+      <div class="reference-grid">
+        <div class="reference-card">
+          <h3>Herr Michael Neidhart</h3>
+          <p>Klassenlehrperson<br>Flade, Klosterschulhaus</p>
+          <a href="mailto:michael.neidhart@flade.ch">michael.neidhart@flade.ch</a>
+          <a href="tel:0791984895">Tel. 079 198 48 95</a>
+        </div>
 
-    document.querySelectorAll(".accordion").forEach((accordion) => {
-      const content = accordion.querySelector(".accordion-content");
+        <div class="reference-card">
+          <h3>Herr Michael Cozzio</h3>
+          <p>Fachlehrperson<br>Flade, Klosterschulhaus</p>
+          <a href="mailto:michael.cozzio@flade.ch">michael.cozzio@flade.ch</a>
+          <a href="tel:0774317038">Tel. 077 431 70 38</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      accordion.addEventListener("toggle", () => {
-        if (accordion.open && content) {
-          restartAnimation(content, "animate-section");
-        }
-      });
+</main>
+
+<footer>
+  Online-Lebenslauf – im ICT-Campus eigenständig entwickelt
+</footer>
+
+<script>
+  function showPage(pageId) {
+    const pages = document.querySelectorAll(".site-page");
+    pages.forEach(page => page.classList.remove("active"));
+
+    document.getElementById(pageId).classList.add("active");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
-
-    document.querySelectorAll(".inner-details").forEach((detail) => {
-      const content = detail.querySelector(".more-content");
-
-      detail.addEventListener("toggle", () => {
-        if (detail.open && content) {
-          restartAnimation(content, "animate-more");
-        }
-      });
-    });
-  </script>
+  }
+</script>
 
 </body>
-</html> 
+</html>
