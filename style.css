@@ -1,443 +1,405 @@
-:root {
-  --bg: #eef3f8;
-  --card: #ffffff;
-  --text: #111827;
-  --muted: #667085;
-  --blue: #2563eb;
-  --blue-dark: #1e3a8a;
-  --blue-soft: #eaf2ff;
-  --line: #dbe3ef;
-  --shadow: 0 18px 45px rgba(15, 23, 42, 0.09);
-  --radius: 22px;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan Bruderer – Online-Lebenslauf</title>
+  <link rel="stylesheet" href="style.css">
 
-* {
-  box-sizing: border-box;
-}
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at 8% 0%, #dbeafe 0%, transparent 30%),
-    radial-gradient(circle at 90% 10%, #e0e7ff 0%, transparent 28%),
-    var(--bg);
-  line-height: 1.65;
-}
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Jan Bruderer</div>
 
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--line);
-}
+    <div class="nav-links">
+      <button onclick="showPage('start')">Start</button>
+      <button onclick="showPage('ueber')">Über mich</button>
+      <button onclick="showPage('faehigkeiten')">Fähigkeiten</button>
+      <button onclick="showPage('erfahrung')">Erfahrung</button>
+      <button onclick="showPage('schnupper')">Schnupperlehren</button>
+      <button onclick="showPage('ausbildung')">Ausbildung</button>
+      <button onclick="showPage('unterlagen')">Unterlagen</button>
+      <button onclick="showPage('kontakt')">Kontakt</button>
+    </div>
+  </div>
+</nav>
 
-.nav-inner {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 14px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 14px;
-}
+<main class="page">
 
-.logo {
-  font-weight: 800;
-  color: var(--blue-dark);
-  font-size: 20px;
-  white-space: nowrap;
-}
+  <section id="start" class="site-page active">
+    <div class="start-layout">
+      <div class="start-text">
+        <p class="eyebrow">Online-Lebenslauf</p>
+        <h1>Jan Bruderer</h1>
+        <p class="subtitle">Schüler · Sekundarstufe · Interesse an Informatik, ICT und Technik</p>
 
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
+        <p class="hero-text">
+          Motivierter Schüler mit grossem Interesse an Informatik, technischen Systemen und praktischer Arbeit.
+          Diese Webseite habe ich als interaktiven Online-Lebenslauf eigenständig im ICT-Campus entwickelt.
+        </p>
 
-.nav-links button {
-  border: none;
-  background: transparent;
-  color: var(--text);
-  font-weight: 700;
-  font-size: 14px;
-  padding: 9px 12px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: 0.25s ease;
-}
+        <div class="hero-buttons">
+          <button onclick="showPage('kontakt')" class="primary-btn">Kontakt aufnehmen</button>
+          <button onclick="showPage('unterlagen')" class="secondary-btn">Unterlagen ansehen</button>
+        </div>
+      </div>
 
-.nav-links button:hover {
-  background: var(--blue-soft);
-  color: var(--blue-dark);
-}
+      <div class="photo-card">
+        <img src="profilbild.jpg" alt="Foto von Jan Bruderer">
+        <p>Jan Bruderer</p>
+      </div>
+    </div>
+  </section>
 
-.page {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 36px 20px 70px;
-}
+  <section id="ueber" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-user"></i> Über mich</h2>
+      <p>
+        Ich bin ein motivierter und engagierter Schüler mit grossem Interesse an Informatik.
+        Durch Aikido, Handball und schulische Erfahrungen habe ich gelernt, Verantwortung zu übernehmen,
+        diszipliniert zu arbeiten und im Team zuverlässig mitzuwirken. Ich freue mich darauf,
+        meine Fähigkeiten weiterzuentwickeln und neue praktische Erfahrungen zu sammeln.
+      </p>
+    </div>
+  </section>
 
-.site-page {
-  display: none;
-  animation: pageFade 0.45s ease;
-}
+  <section id="faehigkeiten" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-lightbulb"></i> Fähigkeiten</h2>
 
-.site-page.active {
-  display: block;
-}
+      <div class="skills-grid">
+        <div class="skill-card"><strong>Informatik</strong><span>ICT-Campus, ECDL Zertifikat</span></div>
+        <div class="skill-card"><strong>Teamfähigkeit</strong><span>Handball</span></div>
+        <div class="skill-card"><strong>Disziplin</strong><span>Aikido und Handball</span></div>
+        <div class="skill-card"><strong>Ausdauer</strong><span>ICT-Campus, Aikido, Handball und Schule</span></div>
+        <div class="skill-card"><strong>Belastbarkeit</strong><span>Schule, Sport und neue Herausforderungen</span></div>
+        <div class="skill-card"><strong>Konzentration</strong><span>Aikido und schulische Arbeit</span></div>
+        <div class="skill-card"><strong>Verantwortung</strong><span>Sprachaufenthalt England, Aikido Kindertraining</span></div>
+      </div>
+    </div>
+  </section>
 
-@keyframes pageFade {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
+  <section id="erfahrung" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-briefcase"></i> Praktische Erfahrung</h2>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <h3>Sprachaufenthalt England – Torquay</h3>
+          <span>Sommer 2025</span>
+        </div>
+
+        <p>
+          Im Sommer 2025 absolvierte ich einen dreiwöchigen Sprachaufenthalt in Torquay, England.
+          Während dieser Zeit konnte ich meine Englischkenntnisse deutlich verbessern und wertvolle internationale
+          Erfahrungen sammeln. Besonders bereichernd war der Austausch mit Menschen aus verschiedenen Ländern und Kulturen.
+          Da ich alleine unterwegs war, entwickelte ich zudem ein höheres Mass an Selbstständigkeit und Eigenverantwortung.
+        </p>
+
+        <div class="button-row">
+          <a href="https://www.esl.ch/de/lp/sprachaufenthalte?idesl=00eeb030a9d4a2b8f1e3522e31ab2298&msclkid=7831540d3b3c1270c00b3da6d71dca9e&utm_source=bing&utm_medium=cpc&utm_campaign=CHDE%20-%20BRA&utm_term=ESL&utm_content=ALL%20-%20Brand" target="_blank" rel="noopener noreferrer">ESL Sprachreisen</a>
+          <a href="https://www.kaplaninternational.com/language-schools/united-kingdom/torquay" target="_blank" rel="noopener noreferrer">Kaplan Torquay</a>
+          <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
+        </div>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <h3>ICT-Campus – Informatik-Förderprogramm</h3>
+          <span>ab Mai 2025</span>
+        </div>
+
+        <p>
+          Am ICT Campus lerne ich verschiedene Programmierkonzepte kennen. Ich beschäftige mich selbstständig damit,
+          wie Programme und Algorithmen funktionieren, und verstehe dadurch technische Zusammenhänge immer besser.
+          Der ICT Campus ist ein spannender Lernort, an dem ich jeden zweiten Samstag vier Stunden lang an verschiedenen Projekten arbeite.
+        </p>
+
+        <div class="button-row">
+          <a href="https://www.ict-scouts.ch/de/campus/index.php" target="_blank" rel="noopener noreferrer">ICT Scouts Campus</a>
+          <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
+        </div>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <h3>Aikido – Trainer beim Kindertraining</h3>
+          <span>2022 – heute</span>
+        </div>
+
+        <p>
+          Beim Kindertraining übernehme ich Verantwortung, unterstütze jüngere Teilnehmende
+          und lerne, geduldig, zuverlässig und klar zu kommunizieren.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="schnupper" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Schnupperlehren / Schnuppertage</h2>
+
+      <div class="job-grid">
+
+        <div class="job-card">
+          <h3>Gebäudeinformatiker EFZ</h3>
+          <ul>
+            <li><a href="https://lehmann.ch/" target="_blank" rel="noopener noreferrer">Lehmann Elektro AG</a> – 26. September 2025</li>
+
+            <li>
+              <a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> – 9.–10. Oktober 2025
+              <div class="pdf-link-box">
+                <a href="bericht-baumann-gebaeudeinformatiker.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="https://www.bichler.ch/" target="_blank" rel="noopener noreferrer">Bichler + Partner AG</a> – 5. Februar 2026
+              <div class="pdf-link-box">
+                <a href="bericht-bichler-partner.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+
+            <li><a href="https://www.ibg.ch/engineering" target="_blank" rel="noopener noreferrer">IBG Engineering AG</a> – 22. November 2025</li>
+
+            <li>
+              <a href="https://www.flughafen-zuerich.ch/de/unternehmen" target="_blank" rel="noopener noreferrer">Flughafen Zürich AG</a> – 21. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-flughafen-zuerich.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="https://www.techcom.ch/" target="_blank" rel="noopener noreferrer">TechCom electro AG</a> – 23.–24. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-techcom.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Elektroinstallateur EFZ</h3>
+          <ul>
+            <li><a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> – 7.–8. Oktober 2025</li>
+
+            <li>
+              <a href="https://www.etavis.ch/" target="_blank" rel="noopener noreferrer">ETAVIS</a> – 20. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-etavis.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Multimediaelektroniker EFZ</h3>
+          <ul>
+            <li><a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">St. Gallisch-Appenzellische Kraftwerke AG (SAK)</a> – 7. Januar 2026</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Elektroniker EFZ</h3>
+          <ul>
+            <li><a href="https://www.gesys.ch/" target="_blank" rel="noopener noreferrer">Grossenbacher Systeme AG</a> – 16. November 2025, ½ Tag</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>Automatiker EFZ</h3>
+          <ul>
+            <li>
+              <a href="https://schmidautomation.com/" target="_blank" rel="noopener noreferrer">Schmid Automation AG</a> – 12. Februar 2026
+              <div class="pdf-link-box">
+                <a href="bericht-schmid-automation.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <h3>ICT-Fachmann EFZ</h3>
+          <ul>
+            <li>
+              <a href="https://www.h-och.ch/" target="_blank" rel="noopener noreferrer">HOCH Health Ostschweiz</a> – 1. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-hoch-health.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="https://www.raiffeisen.ch/rch/de.html" target="_blank" rel="noopener noreferrer">Raiffeisen Schweiz</a> – 27. April 2026, Infoanlass
+              <div class="pdf-link-box">
+                <a href="bericht-raiffeisen-bestaetigung.pdf" target="_blank" rel="noopener noreferrer">Bestätigung ansehen</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-card wide-card">
+          <h3>Weiteres</h3>
+          <ul>
+            <li>
+              Infoabend Abacus – Informatiker EFZ Fachrichtung Plattformentwickler und Applikationsentwickler EFZ
+              sowie ICT-Fachmann EFZ – 12. März 2026
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="ausbildung" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-school"></i> Ausbildung & Sprachen</h2>
+
+      <div class="grid-2">
+        <div class="timeline-card">
+          <h3>Ausbildung</h3>
+          <div class="timeline-item"><strong>2024 – heute</strong><p>Sekundarstufe, Flade — Klosterschulhaus St. Gallen</p></div>
+          <div class="timeline-item"><strong>2018 – 2024</strong><p>Primarschule Feldli — St. Gallen</p></div>
+        </div>
+
+        <div class="timeline-card">
+          <h3>Sprachen</h3>
+          <div class="timeline-item"><strong>Deutsch</strong><p>Muttersprache</p></div>
+          <div class="timeline-item"><strong>Tschechisch</strong><p>Muttersprache</p></div>
+          <div class="timeline-item"><strong>Englisch</strong><p>Fortgeschritten</p></div>
+          <div class="timeline-item"><strong>Französisch</strong><p>Grundkenntnisse</p></div>
+        </div>
+      </div>
+
+      <h2 class="small-heading">Interessen</h2>
+      <div class="tags">
+        <span>Aikido</span>
+        <span>Handball (Torwart)</span>
+        <span>Informatik</span>
+        <span>ICT-Campus</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="unterlagen" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-folder-open"></i> Zertifikate & Bewerbungsunterlagen</h2>
+
+      <p class="section-text">
+        Hier befinden sich meine wichtigsten Unterlagen, Zertifikate und Nachweise.
+      </p>
+
+      <div class="documents-grid">
+
+        <div class="document-card">
+          <div class="document-icon blue"><i class="fa-solid fa-file-lines"></i></div>
+          <h3>Lebenslauf</h3>
+          <p>Vollständiger Lebenslauf als PDF-Version.</p>
+          <a href="lebenslauf.pdf" target="_blank" rel="noopener noreferrer">PDF öffnen</a>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon green"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Zeugnisse</h3>
+          <p>Schulzeugnisse und schulische Leistungen.</p>
+          <a href="zeugnisse.pdf" target="_blank" rel="noopener noreferrer">PDF öffnen</a>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon blue"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>ICT-Campus Zertifikat</h3>
+          <p>Teilnahme am Informatik-Förderprogramm ICT-Campus.</p>
+          <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon teal"><i class="fa-solid fa-earth-europe"></i></div>
+          <h3>Sprachaufenthalt England</h3>
+          <p>Nachweis des Sprachaufenthalts in Torquay.</p>
+          <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
+        </div>
+
+        <div class="document-card upcoming">
+          <div class="document-icon dark"><i class="fa-solid fa-computer"></i></div>
+          <h3>ECDL Zertifikat</h3>
+          <p>Kommt in Kürze.</p>
+        </div>
+
+        <div class="document-card upcoming">
+          <div class="document-icon dark"><i class="fa-solid fa-language"></i></div>
+          <h3>Cambridge First</h3>
+          <p>Englisch-Zertifikat – Kommt in Kürze.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-address-card"></i> Kontakt</h2>
+
+      <div class="grid-2">
+        <div class="info-card"><strong>E-Mail</strong><a href="mailto:Jan.bruderer11@gmail.com">Jan.bruderer11@gmail.com</a></div>
+        <div class="info-card"><strong>Telefon</strong><a href="tel:0774765792">077 476 57 92</a></div>
+        <div class="info-card"><strong>Adresse</strong>Paul-Brandt-Strasse 19<br>9000 St. Gallen</div>
+        <div class="info-card"><strong>Geburtsdatum</strong>12. September 2011</div>
+      </div>
+
+      <h2 class="small-heading">Referenzen</h2>
+
+      <div class="reference-grid">
+        <div class="reference-card">
+          <h3>Herr Michael Neidhart</h3>
+          <p>Klassenlehrperson<br>Flade, Klosterschulhaus</p>
+          <a href="mailto:michael.neidhart@flade.ch">michael.neidhart@flade.ch</a>
+          <a href="tel:0791984895">Tel. 079 198 48 95</a>
+        </div>
+
+        <div class="reference-card">
+          <h3>Herr Michael Cozzio</h3>
+          <p>Fachlehrperson<br>Flade, Klosterschulhaus</p>
+          <a href="mailto:michael.cozzio@flade.ch">michael.cozzio@flade.ch</a>
+          <a href="tel:0774317038">Tel. 077 431 70 38</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Jan Bruderer · Online-Lebenslauf
+</footer>
+
+<script>
+  function showPage(pageId) {
+    const pages = document.querySelectorAll(".site-page");
+    const buttons = document.querySelectorAll(".nav-links button");
+
+    pages.forEach(page => page.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+
+    buttons.forEach(button => button.classList.remove("active-btn"));
+
+    const clickedButton = Array.from(buttons).find(button =>
+      button.getAttribute("onclick").includes(pageId)
+    );
+
+    if (clickedButton) {
+      clickedButton.classList.add("active-btn");
+    }
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
+</script>
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.start-layout {
-  display: grid;
-  grid-template-columns: 1.5fr 360px;
-  gap: 24px;
-  align-items: stretch;
-}
-
-.start-text,
-.photo-card,
-.section {
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid var(--line);
-  border-radius: 30px;
-  padding: 44px;
-  box-shadow: var(--shadow);
-}
-
-.eyebrow {
-  margin: 0 0 10px;
-  color: var(--blue);
-  font-size: 13px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-h1 {
-  margin: 0;
-  font-size: 54px;
-  line-height: 1.05;
-  letter-spacing: -1px;
-}
-
-.subtitle {
-  margin: 14px 0 0;
-  font-size: 20px;
-  color: var(--muted);
-}
-
-.hero-text {
-  max-width: 780px;
-  margin: 22px 0 0;
-  font-size: 17px;
-}
-
-.photo-card {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.photo-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1.15;
-  object-fit: cover;
-  border-radius: 24px;
-  border: 1px solid var(--line);
-  background: var(--blue-soft);
-}
-
-.photo-card p {
-  margin: 16px 0 0;
-  font-weight: 800;
-  color: var(--blue-dark);
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 26px;
-}
-
-.hero-buttons button,
-.button-row a {
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 999px;
-  font-weight: 700;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-
-.primary-btn {
-  background: var(--blue);
-  color: white;
-  border: none;
-}
-
-.secondary-btn {
-  background: white;
-  border: 1px solid #bfdbfe;
-  color: var(--blue-dark);
-}
-
-.hero-buttons button:hover,
-.button-row a:hover {
-  transform: translateY(-2px);
-}
-
-.section {
-  border-radius: var(--radius);
-}
-
-.section h2 {
-  margin: 0 0 20px;
-  font-size: 30px;
-  color: var(--blue-dark);
-}
-
-.small-heading {
-  margin-top: 30px !important;
-}
-
-.grid-2,
-.skills-grid,
-.job-grid,
-.reference-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-}
-
-.info-card,
-.skill-card,
-.experience-card,
-.job-card,
-.reference-card,
-.timeline-card {
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 18px;
-}
-
-.info-card strong,
-.skill-card strong,
-.timeline-item strong {
-  display: block;
-  color: var(--blue-dark);
-  margin-bottom: 5px;
-}
-
-a {
-  color: var(--blue);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.skill-card {
-  background: linear-gradient(135deg, #f8fbff, #eef5ff);
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.13);
-}
-
-.skill-card span {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.experience-card {
-  border-left: 5px solid var(--blue);
-  margin-bottom: 16px;
-}
-
-.experience-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  margin-bottom: 10px;
-}
-
-.experience-top h3,
-.job-card h3,
-.reference-card h3,
-.timeline-card h3 {
-  margin: 0;
-  color: var(--text);
-}
-
-.experience-top span {
-  color: var(--muted);
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
-}
-
-.button-row a {
-  background: white;
-  border: 1px solid #bfdbfe;
-  color: var(--blue-dark);
-}
-
-.job-card h3 {
-  color: var(--blue-dark);
-  margin-bottom: 8px;
-}
-
-.job-card ul {
-  margin: 0;
-  padding-left: 20px;
-}
-
-.job-card li {
-  margin-bottom: 16px;
-}
-
-.report-details {
-  margin-top: 8px;
-}
-
-.report-details summary {
-  display: inline-block;
-  cursor: pointer;
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid #bfdbfe;
-  background: #f8fbff;
-  color: var(--blue-dark);
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.report-details summary:hover {
-  background: var(--blue-soft);
-}
-
-.pdf-box {
-  margin-top: 12px;
-  padding: 14px;
-  border-left: 4px solid var(--blue);
-  background: #f8fbff;
-  border-radius: 14px;
-}
-
-.pdf-box object {
-  width: 100%;
-  height: 420px;
-  margin-top: 12px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: white;
-}
-
-.wide-card {
-  grid-column: 1 / -1;
-}
-
-.timeline-item {
-  padding: 12px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.timeline-item:last-child {
-  border-bottom: none;
-}
-
-.timeline-item p {
-  margin: 0;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tags span {
-  background: var(--blue-soft);
-  color: var(--blue-dark);
-  border: 1px solid #bfdbfe;
-  border-radius: 999px;
-  padding: 9px 14px;
-  font-weight: 700;
-}
-
-.reference-card a {
-  display: block;
-  margin-top: 6px;
-}
-
-footer {
-  text-align: center;
-  color: var(--muted);
-  padding: 24px;
-}
-
-@media (max-width: 900px) {
-  .start-layout,
-  .grid-2,
-  .skills-grid,
-  .job-grid,
-  .reference-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  .start-text,
-  .photo-card,
-  .section {
-    padding: 24px;
-  }
-
-  .experience-top {
-    flex-direction: column;
-  }
-
-  .wide-card {
-    grid-column: auto;
-  }
-
-  .pdf-box object {
-    height: 320px;
-  }
-}
+</body>
+</html>
