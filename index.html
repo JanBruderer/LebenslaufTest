@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jan Bruderer – Online-Lebenslauf</title>
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -19,6 +22,7 @@
       <button onclick="showPage('erfahrung')">Erfahrung</button>
       <button onclick="showPage('schnupper')">Schnupperlehren</button>
       <button onclick="showPage('ausbildung')">Ausbildung</button>
+      <button onclick="showPage('unterlagen')">Unterlagen</button>
       <button onclick="showPage('kontakt')">Kontakt</button>
     </div>
   </div>
@@ -40,7 +44,7 @@
 
         <div class="hero-buttons">
           <button onclick="showPage('kontakt')" class="primary-btn">Kontakt aufnehmen</button>
-          <button onclick="showPage('schnupper')" class="secondary-btn">Schnupperlehren ansehen</button>
+          <button onclick="showPage('unterlagen')" class="secondary-btn">Unterlagen ansehen</button>
         </div>
       </div>
 
@@ -53,7 +57,7 @@
 
   <section id="ueber" class="site-page">
     <div class="section">
-      <h2>Über mich</h2>
+      <h2><i class="fa-solid fa-user"></i> Über mich</h2>
       <p>
         Ich bin ein motivierter und engagierter Schüler mit grossem Interesse an Informatik.
         Durch Aikido, Handball und schulische Erfahrungen habe ich gelernt, Verantwortung zu übernehmen,
@@ -65,7 +69,7 @@
 
   <section id="faehigkeiten" class="site-page">
     <div class="section">
-      <h2>Fähigkeiten</h2>
+      <h2><i class="fa-solid fa-lightbulb"></i> Fähigkeiten</h2>
 
       <div class="skills-grid">
         <div class="skill-card"><strong>Informatik</strong><span>ICT-Campus, ECDL Zertifikat</span></div>
@@ -81,7 +85,7 @@
 
   <section id="erfahrung" class="site-page">
     <div class="section">
-      <h2>Praktische Erfahrung</h2>
+      <h2><i class="fa-solid fa-briefcase"></i> Praktische Erfahrung</h2>
 
       <article class="experience-card">
         <div class="experience-top">
@@ -97,9 +101,9 @@
         </p>
 
         <div class="button-row">
-          <a href="https://www.esl.ch/de/lp/sprachaufenthalte?idesl=00eeb030a9d4a2b8f1e3522e31ab2298&msclkid=7831540d3b3c1270c00b3da6d71dca9e&utm_source=bing&utm_medium=cpc&utm_campaign=CHDE%20-%20BRA&utm_term=ESL&utm_content=ALL%20-%20Brand" target="_blank">ESL Sprachreisen</a>
-          <a href="https://www.kaplaninternational.com/language-schools/united-kingdom/torquay" target="_blank">Kaplan Torquay</a>
-          <a href="sprachaufenthalt.pdf" target="_blank">Zertifikat öffnen</a>
+          <a href="https://www.esl.ch/de/lp/sprachaufenthalte?idesl=00eeb030a9d4a2b8f1e3522e31ab2298&msclkid=7831540d3b3c1270c00b3da6d71dca9e&utm_source=bing&utm_medium=cpc&utm_campaign=CHDE%20-%20BRA&utm_term=ESL&utm_content=ALL%20-%20Brand" target="_blank" rel="noopener noreferrer">ESL Sprachreisen</a>
+          <a href="https://www.kaplaninternational.com/language-schools/united-kingdom/torquay" target="_blank" rel="noopener noreferrer">Kaplan Torquay</a>
+          <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
         </div>
       </article>
 
@@ -116,8 +120,8 @@
         </p>
 
         <div class="button-row">
-          <a href="https://www.ict-scouts.ch/de/campus/index.php" target="_blank">ICT Scouts Campus</a>
-          <a href="ict-campus.pdf" target="_blank">Zertifikat öffnen</a>
+          <a href="https://www.ict-scouts.ch/de/campus/index.php" target="_blank" rel="noopener noreferrer">ICT Scouts Campus</a>
+          <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
         </div>
       </article>
 
@@ -137,52 +141,43 @@
 
   <section id="schnupper" class="site-page">
     <div class="section">
-      <h2>Schnupperlehren / Schnuppertage</h2>
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Schnupperlehren / Schnuppertage</h2>
 
       <div class="job-grid">
 
         <div class="job-card">
           <h3>Gebäudeinformatiker EFZ</h3>
           <ul>
-            <li><a href="https://lehmann.ch/" target="_blank">Lehmann Elektro AG</a> – 26. September 2025</li>
+            <li><a href="https://lehmann.ch/" target="_blank" rel="noopener noreferrer">Lehmann Elektro AG</a> – 26. September 2025</li>
 
             <li>
-              <a href="https://www.baumann-electro.ch/de/" target="_blank">Baumann Electro AG</a> – 9.–10. Oktober 2025
-             <div class="pdf-link-box">
-              <a href="bericht-baumann-gebaeudeinformatiker.pdf" target="_blank">
-                Hier klicken um den Schnupperbericht anzusehen
-              </a>
-            </div>
-            </li>
-
-            <li>
-              <a href="https://www.bichler.ch/" target="_blank">Bichler + Partner AG</a> – 5. Februar 2026
+              <a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> – 9.–10. Oktober 2025
               <div class="pdf-link-box">
-              <a href="bericht-bichler-partner.pdf" target="_blank">
-                Hier klicken um den Schnupperbericht anzusehen
-              </a>
-            </div>
-            </li>
-
-            <li><a href="https://www.ibg.ch/engineering" target="_blank">IBG Engineering AG</a> – 22. November 2025</li>
-
-            <li>
-              <a href="https://www.flughafen-zuerich.ch/de/unternehmen" target="_blank">Flughafen Zürich AG</a> – 21. April 2026
-              <div class="pdf-link-box">
-                <a href="bericht-flughafen-zuerich.pdf" target="_blank">
-                  Hier klicken um den Schnupperbericht anzusehen
-                </a>
+                <a href="bericht-baumann-gebaeudeinformatiker.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
               </div>
             </li>
 
             <li>
-              <a href="https://www.techcom.ch/" target="_blank">TechCom electro AG</a> – 23.–24. April 2026
+              <a href="https://www.bichler.ch/" target="_blank" rel="noopener noreferrer">Bichler + Partner AG</a> – 5. Februar 2026
               <div class="pdf-link-box">
-                <a href="bericht-techcom.pdf" target="_blank">
-                  Hier klicken um den Schnupperbericht anzusehen
-                </a>
+                <a href="bericht-bichler-partner.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
               </div>
-              </details>
+            </li>
+
+            <li><a href="https://www.ibg.ch/engineering" target="_blank" rel="noopener noreferrer">IBG Engineering AG</a> – 22. November 2025</li>
+
+            <li>
+              <a href="https://www.flughafen-zuerich.ch/de/unternehmen" target="_blank" rel="noopener noreferrer">Flughafen Zürich AG</a> – 21. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-flughafen-zuerich.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="https://www.techcom.ch/" target="_blank" rel="noopener noreferrer">TechCom electro AG</a> – 23.–24. April 2026
+              <div class="pdf-link-box">
+                <a href="bericht-techcom.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -190,14 +185,12 @@
         <div class="job-card">
           <h3>Elektroinstallateur EFZ</h3>
           <ul>
-            <li><a href="https://www.baumann-electro.ch/de/" target="_blank">Baumann Electro AG</a> – 7.–8. Oktober 2025</li>
+            <li><a href="https://www.baumann-electro.ch/de/" target="_blank" rel="noopener noreferrer">Baumann Electro AG</a> – 7.–8. Oktober 2025</li>
 
             <li>
-              <a href="https://www.etavis.ch/" target="_blank">ETAVIS</a> – 20. April 2026
+              <a href="https://www.etavis.ch/" target="_blank" rel="noopener noreferrer">ETAVIS</a> – 20. April 2026
               <div class="pdf-link-box">
-                <a href="bericht-etavis.pdf" target="_blank">
-                  Hier klicken um den Schnupperbericht anzusehen
-                </a>
+                <a href="bericht-etavis.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
               </div>
             </li>
           </ul>
@@ -206,24 +199,14 @@
         <div class="job-card">
           <h3>Multimediaelektroniker EFZ</h3>
           <ul>
-            <li><a href="https://www.sak.ch/" target="_blank">St. Gallisch-Appenzellische Kraftwerke AG (SAK)</a> – 7. Januar 2026</li>
-          </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
-
-        <div class="job-card">
-          <h3>Multimediaelektroniker EFZ</h3>
-          <ul>
-            <li><a href="https://www.sak.ch/" target="_blank">St. Gallisch-Appenzellische Kraftwerke AG (SAK)</a> – 7. Januar 2026</li>
+            <li><a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">St. Gallisch-Appenzellische Kraftwerke AG (SAK)</a> – 7. Januar 2026</li>
           </ul>
         </div>
 
         <div class="job-card">
           <h3>Elektroniker EFZ</h3>
           <ul>
-            <li><a href="https://www.gesys.ch/" target="_blank">Grossenbacher Systeme AG</a> – 16. November 2025, ½ Tag</li>
+            <li><a href="https://www.gesys.ch/" target="_blank" rel="noopener noreferrer">Grossenbacher Systeme AG</a> – 16. November 2025, ½ Tag</li>
           </ul>
         </div>
 
@@ -231,36 +214,29 @@
           <h3>Automatiker EFZ</h3>
           <ul>
             <li>
-              <a href="https://schmidautomation.com/" target="_blank">Schmid Automation AG</a> – 12. Februar 2026
+              <a href="https://schmidautomation.com/" target="_blank" rel="noopener noreferrer">Schmid Automation AG</a> – 12. Februar 2026
               <div class="pdf-link-box">
-                <a href="bericht-schmid-automation.pdf" target="_blank">
-                  Hier klicken um den Schnupperbericht anzusehen
-                </a>
+                <a href="bericht-schmid-automation.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
               </div>
             </li>
           </ul>
         </div>
-        
+
         <div class="job-card">
           <h3>ICT-Fachmann EFZ</h3>
           <ul>
             <li>
-              <a href="https://www.h-och.ch/" target="_blank">HOCH Health Ostschweiz</a> – 1. April 2026
+              <a href="https://www.h-och.ch/" target="_blank" rel="noopener noreferrer">HOCH Health Ostschweiz</a> – 1. April 2026
               <div class="pdf-link-box">
-                <a href="bericht-hoch-health.pdf" target="_blank">
-                  Hier klicken um den Schnupperbericht anzusehen
-                </a>
+                <a href="bericht-hoch-health.pdf" target="_blank" rel="noopener noreferrer">Schnupperbericht ansehen</a>
               </div>
             </li>
 
             <li>
-              <a href="https://www.raiffeisen.ch/rch/de.html" target="_blank">Raiffeisen Schweiz</a> – 27. April 2026, Infoanlass
+              <a href="https://www.raiffeisen.ch/rch/de.html" target="_blank" rel="noopener noreferrer">Raiffeisen Schweiz</a> – 27. April 2026, Infoanlass
               <div class="pdf-link-box">
-                <a href="bericht-raiffeisen-bestaetigung.pdf" target="_blank">
-                  Hier klicken um die Bestätigung anzusehen
-                </a>
+                <a href="bericht-raiffeisen-bestaetigung.pdf" target="_blank" rel="noopener noreferrer">Bestätigung ansehen</a>
               </div>
-              </details>
             </li>
           </ul>
         </div>
@@ -281,7 +257,7 @@
 
   <section id="ausbildung" class="site-page">
     <div class="section">
-      <h2>Ausbildung & Sprachen</h2>
+      <h2><i class="fa-solid fa-school"></i> Ausbildung & Sprachen</h2>
 
       <div class="grid-2">
         <div class="timeline-card">
@@ -309,9 +285,63 @@
     </div>
   </section>
 
+  <section id="unterlagen" class="site-page">
+    <div class="section">
+      <h2><i class="fa-solid fa-folder-open"></i> Zertifikate & Bewerbungsunterlagen</h2>
+
+      <p class="section-text">
+        Hier befinden sich meine wichtigsten Unterlagen, Zertifikate und Nachweise.
+      </p>
+
+      <div class="documents-grid">
+
+        <div class="document-card">
+          <div class="document-icon blue"><i class="fa-solid fa-file-lines"></i></div>
+          <h3>Lebenslauf</h3>
+          <p>Vollständiger Lebenslauf als PDF-Version.</p>
+          <a href="lebenslauf.pdf" target="_blank" rel="noopener noreferrer">PDF öffnen</a>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon green"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Zeugnisse</h3>
+          <p>Schulzeugnisse und schulische Leistungen.</p>
+          <a href="zeugnisse.pdf" target="_blank" rel="noopener noreferrer">PDF öffnen</a>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon blue"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>ICT-Campus Zertifikat</h3>
+          <p>Teilnahme am Informatik-Förderprogramm ICT-Campus.</p>
+          <a href="ict-campus.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon teal"><i class="fa-solid fa-earth-europe"></i></div>
+          <h3>Sprachaufenthalt England</h3>
+          <p>Nachweis des Sprachaufenthalts in Torquay.</p>
+          <a href="sprachaufenthalt.pdf" target="_blank" rel="noopener noreferrer">Zertifikat öffnen</a>
+        </div>
+
+        <div class="document-card upcoming">
+          <div class="document-icon dark"><i class="fa-solid fa-computer"></i></div>
+          <h3>ECDL Zertifikat</h3>
+          <p>Kommt in Kürze.</p>
+        </div>
+
+        <div class="document-card upcoming">
+          <div class="document-icon dark"><i class="fa-solid fa-language"></i></div>
+          <h3>Cambridge First</h3>
+          <p>Englisch-Zertifikat – Kommt in Kürze.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section id="kontakt" class="site-page">
     <div class="section">
-      <h2>Kontakt</h2>
+      <h2><i class="fa-solid fa-address-card"></i> Kontakt</h2>
 
       <div class="grid-2">
         <div class="info-card"><strong>E-Mail</strong><a href="mailto:Jan.bruderer11@gmail.com">Jan.bruderer11@gmail.com</a></div>
@@ -343,15 +373,26 @@
 </main>
 
 <footer>
-  Online-Lebenslauf – im ICT-Campus eigenständig entwickelt
+  © 2026 Jan Bruderer · Online-Lebenslauf
 </footer>
 
 <script>
   function showPage(pageId) {
     const pages = document.querySelectorAll(".site-page");
-    pages.forEach(page => page.classList.remove("active"));
+    const buttons = document.querySelectorAll(".nav-links button");
 
+    pages.forEach(page => page.classList.remove("active"));
     document.getElementById(pageId).classList.add("active");
+
+    buttons.forEach(button => button.classList.remove("active-btn"));
+
+    const clickedButton = Array.from(buttons).find(button =>
+      button.getAttribute("onclick").includes(pageId)
+    );
+
+    if (clickedButton) {
+      clickedButton.classList.add("active-btn");
+    }
 
     window.scrollTo({
       top: 0,
